@@ -1,0 +1,75 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.round-frame {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+section {
+    margin: 20px;
+}
+/* Add additional styles as needed */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    max-height: 80vh; 
+    overflow-y: auto;
+}
+
+.popup-content {
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+.cafe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.button-primary {
+    background-color:blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Adjust the value for the desired level of rounding */
+}
+
+.button-secondary {
+    background-color:blue ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Adjust the value for the desired level of rounding */
+}
