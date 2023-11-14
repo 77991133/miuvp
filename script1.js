@@ -13,7 +13,7 @@ const cafes = {
         name: "Dirhami kalakohvik",
         description: "Description for Dirhami kalakohvik.",
         image: "Dirham_2.jpg",
-        menu: "Menüü muutub neil iga nädal, mõnikord isegi iga päev.",
+        menu: "Menüü muutub neil iga nädal, mõinkord isegi iga päev.",
         openingHours: "Ettebronneerimine",
         phone: "5 177 899",
         homepage: "https://www.dirhami.ee/kalakohvik/"
@@ -33,7 +33,7 @@ const cafes = {
         name: "Emmaste teemaja",
         description: "Description for LAUT resto.",
         image: "emmaste-teemaja_3.jpg",
-        menu: "Menüüst kilde võite näha teemaja instagrammis.",
+        menu: "Menüüst kilde võin näha teemaja instagrammis.",
         openingHours: "Avatud igapäevaselt <br> 11:00-17:00",
         phone: "5 342 3957",
         instagram: "https://www.instagram.com/emmaste_teemaja/"
@@ -43,7 +43,7 @@ const cafes = {
         name: "Rooslaiu farmi kohvik",
         description: "Description for LAUT resto.",
         image: "Roosilaiu_2.webp",
-        menu: "Menüüga saate tutvuda kodulehel.",
+        menu: "Menüü leiate kodulehelt.",
         openingHours:"01.06.23-31.08.23 <br> 09:00 - 17:00 <br> 01.09.23-31.05.24 <br> Ainult ettetellimisel.",
         phone: "5 164 923",
         homepage: "https://rooslaiutalukihnus.mystrikingly.com/",
@@ -62,7 +62,7 @@ const cafes = {
         name: "Rannaresto",
         description: "Description for LAUT resto.",
         image: "rannaresto-1.jpg",
-        menu: "Menüüga saate kodulehelt.",
+        menu: "Menüü leiate kodulehelt.",
         openingHours: "esmaspäev-neljapäev, pühapäev 11:00 - 22:00 <br> reede-laupäev: 11:00 - 01:00",
         phone: "5 907 2255",
         homepage: "https://ranna-resto.ee/"
@@ -97,8 +97,19 @@ const cafes = {
         homepage: "https://pilguse.com/",
         instagram: "https://www.instagram.com/pilguseresidency/?hl=en"
     },
+    "Roheline Maja kohvik ja pood": {
+        name: "Roheline Maja kohvik ja pood",
+        description: "Description for LAUT resto.",
+        image: "Roheline_maja_3.jpg",
+        menu: "Menüüga tutvuda kodulehel.",
+        openingHours:"teisipäev-reede: 09:00 - 17:00 <br>laupäev 09:00 - 18:00<br>pühapäev 10:00 - 16:00<br>esmaspäev suletud",
+        phone: "434 4307",
+        homepage: "https://visitsouthestonia.com/metsasttaldrikule/rohelise-maja-kohvik/"
+
+    },
     "Cruffin Bread Factory": {
         name: "Cruffin Bread Factory",
+        description: "Description for LAUT resto.",
         image: "Cruffin_3.jpeg",
         menu: "Menüüga saate tutvuda kodulehel.",
         openingHours: "esmaspäev-pühapäev 10-18",  
@@ -106,17 +117,6 @@ const cafes = {
         homepage: "https://cruffin.ee/",
         instagram: "https://www.instagram.com/cruffinsaiatehas"
     },
-    "Roheline Maja kohvik ja pood": {
-        name: "Roheline Maja kohvik ja pood",
-        description: "Description for LAUT resto.",
-        image: "Roheline_maja_3.jpg",
-        menu: "Menüüga saate tutvuda kodulehel.",
-        openingHours:"teisipäev-reede: 09:00 - 17:00 <br>laupäev 09:00 - 18:00<br>pühapäev 10:00 - 16:00<br>esmaspäev suletud",
-        phone: "434 4307",
-        homepage: "https://visitsouthestonia.com/metsasttaldrikule/rohelise-maja-kohvik/"
-
-    },
-    
     
 };
 
@@ -126,7 +126,11 @@ function openPopup() {
 
     const popup = document.getElementById('popup');
     const popupContentDiv = document.getElementById('popup-content');
-
+    
+   
+    const clickedElement = document.getElementById('söögikoht');
+    
+    
     let htmlContent = `<h2>${popupContent.name}</h2>`;
     htmlContent += `<img src="${popupContent.image}" alt="${popupContent.name}" class="cafe-image">`;
     htmlContent += `<h3>Menüü</h3><p>${popupContent.menu}</p>`;
@@ -144,15 +148,15 @@ function openPopup() {
     popupContentDiv.innerHTML = htmlContent;
 
     popup.style.display = 'block';
-
-    
-    if (popupContentDiv.clientHeight > window.innerHeight) {
-        popup.classList.add('right');
-    }
+    popup.classList.add('right');
 }
+
+
 
 function closePopup() {
     const popup = document.getElementById('popup');
     popup.style.display = 'none';
-    popup.classList.remove('right'); 
 }
+
+
+console.log('Script1.js is loaded and executed.');

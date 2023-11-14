@@ -13,33 +13,40 @@
 </head>
 
 <body>
-    <h1>Pärlite menüüd</h1>
-
-    <p>Vali koht, mille kohta soovid rohkem informatsiooni</p>
-
-    <label>Vali söögikoht:</label>
-    <select name="söögikoht" id="söögikoht">
-        <option value="Vaffel kohvik">Vaffel kohvik</option>
-        <option value="Dirhami kalakohvik">Dirhami kalakohvik</option>
-        <option value="LAUT resto">LAUT resto</option>
-        <option value="Emmaste teemaja">Emmaste teemaja</option>
-        <option value="Rooslaiu farmi kohvik">Rooslaiu farmi kohvik</option>
-        <option value="Eastern Outback kohvik">Eastern Outback kohvik</option>
-        <option value="Rannaresto">Rannaresto</option>
-        <option value="Kapteni Farmi kalakohvik">Kapteni Farmi kalakohvik</option>
-        <option value="Kohvik Lohvik">Kohvik Lohvik</option>
-        <option value="Pilguse Mõisa resto">Pilguse Mõisa resto</option>
-        <option value="Roheline Maja kohvik ja pood">Roheline Maja kohvik ja pood,</option>
-        <option value="Cruffin Bread Factory ">Cruffin Bread Factory </option>
-    </select>
-    <br><br>
-    <button onclick="openPopup()" class="button-primary">Vali</button>
-<div id="popup" class="popup">
-    <div class="popup-content" id="popup-content"></div>
-    <button onclick="closePopup()" class="button-secondary">Sulge leht</button>
-</div>
+    <div class="container">
+        <div class="left-side">
+            <h1>Lisa info</h1>
+            <div class="rectangle">
+                <p>Vali koht, mille kohta soovid rohkem informatsiooni</p>
+                <label>Vali söögikoht:</label>
+                <select name="söögikoht" id="söögikoht">
+                    <option value="Vaffel kohvik">Vaffel kohvik</option>
+                    <option value="Dirhami kalakohvik">Dirhami kalakohvik</option>
+                    <option value="LAUT resto">LAUT resto</option>
+                    <option value="Emmaste teemaja">Emmaste teemaja</option>
+                    <option value="Rooslaiu farmi kohvik">Rooslaiu farmi kohvik</option>
+                    <option value="Eastern Outback kohvik">Eastern Outback kohvik</option>
+                    <option value="Rannaresto">Rannaresto</option>
+                    <option value="Kapteni Farmi kalakohvik">Kapteni Farmi kalakohvik</option>
+                    <option value="Kohvik Lohvik">Kohvik Lohvik</option>
+                    <option value="Pilguse Mõisa resto">Pilguse Mõisa resto</option>
+                    <option value="Roheline Maja kohvik ja pood">Roheline Maja kohvik ja pood,</option>
+                    <option value="Cruffin Bread Factory">Cruffin Bread Factory </option>
+                </select>
+                <br><br>
+                <button onclick="openPopup()" class="button-primary">Vali</button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="popup" id="popup">
+                <div class="popup-content" id="popup-content"></div>
+                <button onclick="closePopup()" class="button-secondary">Sulge leht</button>
+            </div>
+           
+        </div>
+    </div>
     <script src="script1.js"></script>
->>>>>>> Karmen
 </body>
 
 </html>
+
