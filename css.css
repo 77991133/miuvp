@@ -1,53 +1,82 @@
 body {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Georgia', Times, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
 }
 
-header {
-    text-align: center;
+.container {
+    display: flex;
+    background-color: bisque;
+}
+
+.left-side {
+    width: 50%;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: whitesmoke
 }
 
-.round-frame {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
+.right-side {
+    width: 50%;
+    background-color: white
 }
 
-section {
-    margin: 20px;
+h1 {
+    text-align: left;
+    padding: 5px;
+    font-size: 60px;
+    font-family: 'Neonderthaw', cursive;
 }
-/* Add additional styles as needed */
 
 .popup {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: rgb(204, 204, 203);
+    border: 1px solid beige;
     z-index: 1000;
-    max-height: 80vh; 
+    max-height: 80vh;
     overflow-y: auto;
+}
+.rectangle {
+    background-color: rgb(156, 155, 154);
+    padding: 20px ;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.popup.right {
+    right: 5%;
+    left: unset;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+
+.popup-content img {
+    max-width: 70%; 
+    height: auto;
+    border-radius: 80%;
 }
 
 .popup-content {
     font-family: 'Times New Roman', Times, serif;
-    
-
+    max-width: 400px; 
+    margin: 0 auto; 
 }
 
-.cafe-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
 
 .button-primary {
-    background-color:blue;
+    background-color: rgb(105, 105, 105);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -57,12 +86,12 @@ section {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px; /* Adjust the value for the desired level of rounding */
+    border-radius: 5px;
 }
 
 .button-secondary {
-    background-color:blue ;
-    color: white;
+    background-color:rgb(106, 106, 106) ;
+    color: rgb(246, 247, 249);
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -71,5 +100,5 @@ section {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px; /* Adjust the value for the desired level of rounding */
-}
+    border-radius: 5px; 
+} 
