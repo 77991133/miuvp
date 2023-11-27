@@ -1,86 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <!-- Container for the image gallery -->
-<div class="container">
-       <!-- Thumbnail images -->
-       <div class="row">
-        <div class="column">
-          <img class="demo cursor active" src="Vahvel-1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-        </div>
-        <div class="column">
-          <img class="demo cursor " src="Vahvel-1.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="Vahvel-1.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="Vahvel-1.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="Vahvel-1.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="Vahvel-1.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-        </div>
-      </div>
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-    <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <div class="container">
-        <img src="Vahvel-1.jpeg" alt="Notebook" style="width:100%;">
-        <div class="content">
-          <h1>Heading</h1>
-          <p>Lorem ipsum..</p>
-        </div>
-      </div>
-        
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
 
+        <!-- Image text -->
+        <div id="imgtext"></div>
     </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-        <img src="Vahvel-1.jpeg" style="width:100%" alt="text">
+    <!-- The grid:  columns -->
+    <div class="row">
+        <div class="column">
+            <img src="Vahvel-1.jpeg" alt="Vaffel kohvik " onclick="myFunction(this);">
+
+            <img src="Vahvel-2.jpeg" alt="Vaffel kohvik" onclick="myFunction(this);">
+
+            <img src="Vahvel-3.jpeg" alt="Vaffel kohvik" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Dirhami_1.jpg" alt="Dirhami kalakohvik" onclick="myFunction(this);">
+
+            <img src="Dirham_2.jpg" alt="Dirhami kalakohvik" onclick="myFunction(this);">
+
+            <img src="Dirhami_3.jpg" alt="Dirhami kalakohvik" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="LAUT_1.jpg" alt="LAUT resto" onclick="myFunction(this);">
+
+            <img src="LAUT_2.jpg" alt="LAUT resto" onclick="myFunction(this);">
+
+            <img src="LAUT_3.jpg" alt="LAUT resto" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Emmaste+Teemaja_1.jpg" alt="Emmaste teemaja" onclick="myFunction(this);">
+
+            <img src="emmaste-teemaja_2.jpg" alt="Emmaste teemaja" onclick="myFunction(this);">
+
+            <img src="emmaste-teemaja_3.jpg" alt="Emmaste teemaja" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Roosilaiu_1.webp" alt="Rooslaiu farmi kohvik" onclick="myFunction(this);">
+
+            <img src="Roosilaiu_2.webp" alt="Rooslaiu farmi kohvik" onclick="myFunction(this);">
+
+            <img src="Roosilaiu_3.webp" alt="Rooslaiu farmi kohvik" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Outback_1.jpg" alt="Eastern Outback kohvik" onclick="myFunction(this);">
+            <img src="Outback_2.jpg" alt="Eastern Outback kohvik" onclick="myFunction(this);">
+            <img src="Outback_3.jpg" alt="Eastern Outback kohvik" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="rannaresto-1.jpg" alt="Rannaresto" onclick="myFunction(this);">
+            <img src="rannaresto-2.jpg" alt="Rannaresto" onclick="myFunction(this);">
+            <img src="rannaresto-3.jpg" alt="Rannaresto" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="kapten_1.jpg" alt="Kapteni Farmi kalakohvik" onclick="myFunction(this);">
+
+            <img src="kapteni_2.jpg" alt="Kapteni Farmi kalakohvik" onclick="myFunction(this);">
+
+            <img src="kapteni_3.jpg" alt="Kapteni Farmi kalakohvik" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Lohvik_1.jpg" alt="Kohvik Lohvik" onclick="myFunction(this);">
+
+            <img src="Lohvik_2.png" alt="Kohvik Lohvik" onclick="myFunction(this);">
+
+            <img src="Lohvik_3.jpg" alt="Kohvik Lohvik" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Pilguse-1_.jpg" alt="Pilguse Mõisa resto" onclick="myFunction(this);">
+
+            <img src="Pilguse_2.jpg" alt="Pilguse Mõisa resto" onclick="myFunction(this);">
+
+            <img src="Pilguse_3.jpeg" alt="Pilguse Mõisa resto" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Roheline_maja_1.jpg" alt="Roheline Maja kohvik ja pood" onclick="myFunction(this);">
+
+            <img src="Roheline_maja_2.jpg" alt="Roheline Maja kohvik ja pood" onclick="myFunction(this);">
+
+            <img src="Roheline_maja_3.jpg" alt="Roheline Maja kohvik ja pood" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Cruffin_1.jpg" alt="Cruffin Bread Factory" onclick="myFunction(this);">
+
+            <img src="Cruffin_2.jpg" alt="Cruffin Bread Factory" onclick="myFunction(this);">
+
+            <img src="Cruffin_3.jpeg" alt="Cruffin Bread Factory" onclick="myFunction(this);">
+        </div>
     </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-        <img src="Vahvel-1.jpeg" style="width:100%" alt="text">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-        <img src="Vahvel-1.jpeg" style="width:100%" alt="text">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-        <img src="Vahvel-1.jpeg" style="width:100%" alt="text">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-        <img src="Vahvel-1.jpeg" style="width:100%" alt="text">
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-    <!-- Image text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
- 
-  </div>
+
+
 </body>
+
 </html>
