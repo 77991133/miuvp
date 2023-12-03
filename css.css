@@ -34,13 +34,12 @@ nav a:hover {
 }
 
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     background-color: #fde4b9; 
     padding: 20px;
     text-align: center;
-    z-index: 1;
 }
 table {
     margin: auto;
