@@ -6,6 +6,13 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: #fde4b9; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .column {
     display: flex;
     flex-direction: row;
