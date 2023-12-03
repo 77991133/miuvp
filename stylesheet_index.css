@@ -6,25 +6,21 @@ body {
     margin: 0;
 }
 
-.container {
+.column {
     display: flex;
+    flex-direction: row;
     background-color: bisque;
 }
 
-.left-side {
+.vasak {
     width: 50%;
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: whitesmoke
 }
 
-.right-side {
+.parem {
     width: 50%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    background-color: white
 }
 
 h1 {
@@ -32,59 +28,49 @@ h1 {
     padding: 5px;
     font-size: 60px;
     font-family: 'Neonderthaw', cursive;
+    color: #2e2e2e;
 }
 
-.popup {
-    display: none;
-    position: fixed;
-    padding: 20px;
-    background-color: rgb(204, 204, 203);
-    border: 1px solid beige;
-    z-index: 1000;
-    max-height: 80vh;
-    overflow-y: auto;
-    right: 5%;
-    left: unset;
-    top: 50%;
-    transform: translateY(-50%);
+h2 {
+    text-align: left;
+    padding: 5px;
+    font-size: 40px;
+    font-family: 'Neonderthaw', cursive;
+    color: #2e2e2e
 }
 
-.rectangle {
-    background-color: rgb(156, 155, 154);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+p {
+    color: #4d4d4d;
 }
 
-.popup-content img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 80%;
-}
-
-.popup-content {
-    font-family: 'Times New Roman', Times, serif;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.button-primary,
-.button-secondary {
-    background-color: rgb(105, 105, 105);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
+nav a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+    color: #2e2e2e; 
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.button-secondary {
-    background-color: rgb(106, 106, 106);
-    color: rgb(246, 247, 249);
+nav a:hover {
+    color: #ff6347; 
+}
+
+footer {
+    background-color: #fde4b9; 
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+    font-size: 16px;
+    color: #2e2e2e;
+}
+
+iframe {
+    border: none;
 }
