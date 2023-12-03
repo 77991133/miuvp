@@ -1,3 +1,10 @@
+body {
+    font-family: 'Georgia', Times, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
 header {
     background-color: #fde4b9; 
     display: flex;
@@ -11,6 +18,7 @@ h1 a {
     font-size: 40px;
     font-family: 'Neonderthaw', cursive;
     color: #2e2e2e;
+    text-decoration: none;
 }
 nav a {
     text-decoration: none;
@@ -25,6 +33,9 @@ nav a:hover {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #fde4b9; 
     padding: 20px;
     text-align: center;
