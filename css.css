@@ -82,7 +82,11 @@ h1 {
     z-index: 1000;
     max-height: 80vh;
     overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 .rectangle {
     position: fixed;
     background-color: rgb(156, 155, 154);
