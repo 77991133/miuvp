@@ -85,7 +85,6 @@ h1 {
 }
 
 .rectangle {
-    position: fixed;
     background-color: rgb(156, 155, 154);
     padding: 20px ;
     border-radius: 10px;
