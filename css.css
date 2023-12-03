@@ -5,6 +5,46 @@ body {
     background-position: center;
     margin: 0;
 }
+header {
+    background-color: #fde4b9; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px
+}
+h1 a {
+    text-align: left;
+    padding: 5px;
+    font-size: 40px;
+    font-family: 'Neonderthaw', cursive;
+    color: #2e2e2e;
+}
+nav a {
+    text-decoration: none;
+    color: #2e2e2e; 
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(99, 53, 18); 
+}
+
+footer {
+    background-color: #fde4b9; 
+    padding: 20px;
+    text-align: center;
+}
+table {
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+    font-size: 16px;
+    color: #2e2e2e;
+}
 
 .container {
     display: flex;
