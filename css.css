@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 footer {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%;
     background-color: #fde4b9; 
