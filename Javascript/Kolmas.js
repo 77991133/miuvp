@@ -159,4 +159,4 @@ function closePopup() {
 }
 
 
-console.log('Script1.js is loaded and executed.');
+console.log('Kolmas.js is loaded and executed.');
